@@ -1,5 +1,12 @@
+node_modules/
+.env
+artifacts/
+cache/
+typechain-types/
+deployments/*.json
+coverage/
+coverage.json
 .vscode/
 
-# Local Compiled files
-bin/
-artifacts/
+# Compiler binaries (previously tracked)
+soljson-*.js

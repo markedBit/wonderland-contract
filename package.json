@@ -1,0 +1,23 @@
+{
+  "name": "wonderland-contract",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network pulseTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network pulse",
+    "deploy-lp:testnet": "hardhat run scripts/deployLP.js --network pulseTestnet",
+    "deploy-lp:mainnet": "hardhat run scripts/deployLP.js --network pulse",
+    "verify:testnet": "hardhat verify --network pulseTestnet",
+    "verify:mainnet": "hardhat verify --network pulse"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "dotenv": "^16.4.0",
+    "hardhat": "^2.22.0"
+  }
+}
